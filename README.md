@@ -1,17 +1,21 @@
-# Speaker_Verification-
+# Data Pre-processing
 
-**d-vector**
+Run the datasets script:
+```
+python datasets.py
+```
+One folder will be created, meta containing testing.txt and training.txt saving the wav file names of speaker utterences with a 90%/10% split.
 
-LSTM-based d-vector. GE2E LOSS
+# Model Training
 
-example:[dvector/dvector.py at master · yistLin/dvector (github.com)](https://github.com/yistLin/dvector/blob/master/modules/dvector.py)
+Run the x-vector_train script:
+```
+python x-vector_train.py
+```
+To train the x-vector model based TDNN architecture
 
-![image-20220327134731877](README.assets/image-20220327134731877.png)
+### Acknowledge
 
-**x-vector**
+We study many useful projects in our codeing process, which includes:
 
-TDNN based x-vector 
-
-example:[pytorch_xvectors/models.py at master · manojpamk/pytorch_xvectors (github.com)](https://github.com/manojpamk/pytorch_xvectors/blob/master/models.py)
-
-![image-20220327134754651](README.assets/image-20220327134754651.png)
+https://github.com/KrishnaDN/x-vector-pytorch
